@@ -29,3 +29,4 @@ planning/
 .vscode
 testing.ts
 back-end/src/types/
+back-end/src/old/
