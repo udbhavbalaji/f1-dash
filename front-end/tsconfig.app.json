@@ -1,0 +1,19 @@
+{
+  "extends": "./tsconfig.json", // Extend the base tsconfig.json
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+    "baseUrl": ".", // Set the base directory for module resolution
+    "paths": {
+      // Set up module aliasing if needed
+      "@components/*": ["src/components/*"],
+      "@services/*": ["src/services/*"],
+      "@styles/*": ["src/styles/*"],
+      "@pages/*": ["src/pages/*"],
+      "@data/*": ["src/data/*"],
+      "@app-types/*": ["../types/*"]
+    }
+  },
+  "include": ["src", "../types"], // Include all TypeScript files in the src directory
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and dist directories
+}
