@@ -28,3 +28,4 @@ dist-ssr
 planning/
 .vscode
 testing.ts
+back-end/src/types/
